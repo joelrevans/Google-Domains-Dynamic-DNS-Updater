@@ -2,20 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DnsUpdater.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="DDNSEntries" Type="DnsUpdater.DDNSEntry[]" Scope="User">
-      <Value Profile="(Default)">&lt;DDNSEntryList&gt;
-	&lt;DDNSEntry&gt;
-		&lt;Username&gt;Jf7PFy6g7zDHgAWp&lt;/Username&gt;
-		&lt;Password&gt;pqYrZhfPnH8u8Eey&lt;/Password&gt;
-		&lt;HostName&gt;joelrevans.com&lt;/HostName&gt;
-	&lt;/DDNSEntry&gt;
-	&lt;DDNSEntry&gt;
-		&lt;Username&gt;58x0ofYAbOpzx4N1&lt;/Username&gt;
-		&lt;Password&gt;oXMCZ0qCd7KN6oiQ&lt;/Password&gt;
-		&lt;HostName&gt;transit.joelrevans.com&lt;/HostName&gt;
-	&lt;/DDNSEntry&gt;
-&lt;/DDNSEntryList&gt;</Value>
-    </Setting>
     <Setting Name="GatewayPass" Type="System.String" Scope="User">
       <Value Profile="(Default)">admin</Value>
     </Setting>
@@ -23,7 +9,21 @@
       <Value Profile="(Default)">admin</Value>
     </Setting>
     <Setting Name="UpdateInterval" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">300000</Value>
+      <Value Profile="(Default)">3600000</Value>
+    </Setting>
+    <Setting Name="DDNSEntries" Type="DnsUpdater.DDNSEntry[]" Scope="User">
+      <Value Profile="(Default)">&lt;ArrayOfDDNSEntry&gt;
+  &lt;DDNSEntry&gt;
+    &lt;Username&gt;Jf7PFy6g7zDHgAWp&lt;/Username&gt;
+    &lt;Password&gt;pqYrZhfPnH8u8Eey&lt;/Password&gt;
+    &lt;HostName&gt;joelrevans.com&lt;/HostName&gt;
+  &lt;/DDNSEntry&gt;
+  &lt;DDNSEntry&gt;
+    &lt;Username&gt;58x0ofYAbOpzx4N1&lt;/Username&gt;
+    &lt;Password&gt;oXMCZ0qCd7KN6oiQ&lt;/Password&gt;
+    &lt;HostName&gt;transit.joelrevans.com&lt;/HostName&gt;
+  &lt;/DDNSEntry&gt;
+&lt;/ArrayOfDDNSEntry&gt;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

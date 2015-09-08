@@ -25,29 +25,6 @@ namespace DnsUpdater.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<DDNSEntryList>
-	<DDNSEntry>
-		<Username>Jf7PFy6g7zDHgAWp</Username>
-		<Password>pqYrZhfPnH8u8Eey</Password>
-		<HostName>joelrevans.com</HostName>
-	</DDNSEntry>
-	<DDNSEntry>
-		<Username>58x0ofYAbOpzx4N1</Username>
-		<Password>oXMCZ0qCd7KN6oiQ</Password>
-		<HostName>transit.joelrevans.com</HostName>
-	</DDNSEntry>
-</DDNSEntryList>")]
-        public DnsUpdater.DDNSEntry[] DDNSEntries {
-            get {
-                return ((DnsUpdater.DDNSEntry[])(this["DDNSEntries"]));
-            }
-            set {
-                this["DDNSEntries"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("admin")]
         public string GatewayPass {
             get {
@@ -72,13 +49,36 @@ namespace DnsUpdater.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("300000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("3600000")]
         public int UpdateInterval {
             get {
                 return ((int)(this["UpdateInterval"]));
             }
             set {
                 this["UpdateInterval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<ArrayOfDDNSEntry>
+  <DDNSEntry>
+    <Username>Jf7PFy6g7zDHgAWp</Username>
+    <Password>pqYrZhfPnH8u8Eey</Password>
+    <HostName>joelrevans.com</HostName>
+  </DDNSEntry>
+  <DDNSEntry>
+    <Username>58x0ofYAbOpzx4N1</Username>
+    <Password>oXMCZ0qCd7KN6oiQ</Password>
+    <HostName>transit.joelrevans.com</HostName>
+  </DDNSEntry>
+</ArrayOfDDNSEntry>")]
+        public global::DnsUpdater.DDNSEntry[] DDNSEntries {
+            get {
+                return ((global::DnsUpdater.DDNSEntry[])(this["DDNSEntries"]));
+            }
+            set {
+                this["DDNSEntries"] = value;
             }
         }
     }
